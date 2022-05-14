@@ -69,6 +69,7 @@ describe("Employee Manager 1.2", () => {
             await (await driver.findElement(nameDisplay)).getAttribute("innerHTML")
         ).toContain("Bernice Ortiz");
         });
+        //"getAttribute" was not covered in the lectures - I researched on google w/ my Brother to learn about using attribute "innerHTML" to confirm a text string
 
         test("A canceled change doesn't persist", async () => {
             /*
@@ -90,6 +91,7 @@ describe("Employee Manager 1.2", () => {
                 await (await driver.findElement(nameDisplay)).getAttribute("innerHTML")
             ).toContain("Phillip Weaver");
         });
+        //"getAttribute" was not covered in the lectures - I researched on google w/ my Brother to learn about using attribute "innerHTML" to confirm a text string
 
         test("A saved change persists", async () => {
             /*
